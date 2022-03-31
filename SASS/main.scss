@@ -17,3 +17,12 @@ header {
   margin-left: 250px;
   margin-top: 50px;
 }
+
+$background-color: #f2f2f2f6;
+.location {
+  background-color: $background-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
