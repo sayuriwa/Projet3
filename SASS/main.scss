@@ -1,6 +1,6 @@
-@import url(C:\Users\Sayuri\Desktop\Projet3\SASS\Utils\variables.scss);
-@import url(C:\Users\Sayuri\Desktop\Projet3\SASS\Utils\mixins.scss);
-@import url(C:\Users\Sayuri\Desktop\Projet3\SASS\Utils\fonctions.scss);
+@import url(C:\Users\Sayuri\Desktop\Projet3\SASS\Utils\_variables.scss);
+@import url(C:\Users\Sayuri\Desktop\Projet3\SASS\Utils\_mixins.scss);
+@import url(C:\Users\Sayuri\Desktop\Projet3\SASS\Utils\_fonctions.scss);
 
 
 body {
@@ -25,7 +25,7 @@ header {
   flex-direction: row;
   justify-content: center;
 }
-$background-color: #f2f2f2f6;
+
 .location {
   background-color: $background-color;
   width: 100%;
