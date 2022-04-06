@@ -2,27 +2,51 @@
 @import url(C:UsersSayuriÞsktopProjet3SASSUtils_variables.scss);
 @import url(C:UsersSayuriÞsktopProjet3SASSUtils_mixins.scss);
 @import url(C:UsersSayuriÞsktopProjet3SASSUtils_fonctions.scss);
-* {
-  min-width: 320px;
-  max-width: 475px;
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('C:\Users\Sayuri\Desktop\Projet3\ASSETS\Fonts\Shrikhand-Regular.ttf');
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 header {
   width: 100%;
   height: 130px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-left: 250px;
-  margin-top: 50px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .location {
   background-color: #f2f2f2f6;
+  width: 100%;
+  height: 150px;
+  font-size: 40px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  border-top: solid 4px rgba(217, 217, 217, 0.9647058824);
 }
 
+.location__icon {
+  display: block;
+  margin-left: 10px;
+
+}
+
+/*# sourceMappingURL=style.css.map */
