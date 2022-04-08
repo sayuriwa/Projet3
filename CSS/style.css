@@ -1,11 +1,5 @@
-@charset "UTF-8";
-@import url(C:UsersSayuriÞsktopProjet3SASSUtils_variables.scss);
-@import url(C:UsersSayuriÞsktopProjet3SASSUtils_mixins.scss);
-@import url(C:UsersSayuriÞsktopProjet3SASSUtils_fonctions.scss);
-
-@font-face {
-  font-family: 'Shrikhand';
-  src: url('C:\Users\Sayuri\Desktop\Projet3\ASSETS\Fonts\Shrikhand-Regular.ttf');
+html {
+  width: 100%;
 }
 
 body {
@@ -43,10 +37,94 @@ header {
   border-top: solid 4px rgba(217, 217, 217, 0.9647058824);
 }
 
-.location__icon {
-  display: block;
-  margin-left: 10px;
+.location i {
+  font-size: 40px;
+  margin-right: 30px;
+  color: rgba(229, 229, 229, 0.9647058824);
+}
 
+.location p {
+  font-family: "Roboto", sans-serif;
+}
+
+.find-restaurant {
+  background-color: rgba(250, 250, 250, 0.9647058824);
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-restaurant__head {
+  width: 85%;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 65px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.find-restaurant__description {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.find-restaurant__bouton {
+  background: linear-gradient(#FF79DA, #9356DC);
+  height: 105px;
+  width: 500px;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  border-radius: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 9px 14px #f2f2f2f6;
+}
+
+.how-to-use {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 200px;
+}
+
+.how-to-use__head {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.how-to-use__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+}
+
+.how-to-use__list__bouton {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: rgba(250, 250, 250, 0.9647058824);
+  border-radius: 20px;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
