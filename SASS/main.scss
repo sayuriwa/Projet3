@@ -2,13 +2,10 @@
 @import 'Utils/mixins';
 @import 'Utils/fonctions';
 
-@font-face {
-  font-family: 'Shrikhand';
-  src: url(C:\Users\Sayuri\Desktop\Projet3\ASSETS\Fonts\Shrikhand-Regular.ttf);
-}
 
 html {
   width: 100%;
+  @include text-font;
 }
 body {
   display: flex;
@@ -67,7 +64,6 @@ header {
 }
 .find-restaurant__head {
   width: 85%;
-  @include title-font;
   font-size: 65px;
   font-weight: bold;
   text-align: center;
@@ -77,7 +73,7 @@ header {
   @include text-font;
   text-align: center;
 }
-.find-restaurant__bouton {
+.validator-bouton {
   background: linear-gradient($secondary-color, $primary-color);
   height: 155px;
   width: 550px;
@@ -105,7 +101,6 @@ header {
   margin-top: 50px;
   margin-bottom: 10px;
   margin-left: 50px;
-  @include title-font;
   font-weight: bold;
   font-size: 40px;
 }
@@ -161,7 +156,6 @@ header {
   margin-top: 50px;
   margin-bottom: 10px;
   margin-left: 50px;
-  @include title-font;
   font-weight: bold;
   font-size: 40px;
 }
@@ -200,7 +194,6 @@ header {
   padding-left: 20px;
 }
 .restaurants__list__cards__content__description__head {
-  @include title-font;
   font-size: 40px;
   font-weight: bold;
   margin-bottom: -60px;
@@ -225,10 +218,11 @@ footer {
   justify-content: flex-start;
   font-size: 40px;
 }
-.ohmyfood-icon img{
-  filter: opacity(0.4) drop-shadow(0 0 0 white);
-  font-size: 40px;
-  margin-bottom: 50px;
+.footer__head {
+ font-family: 'Shrikhand';
+ font-size: 45px;
+ margin-left: 50px;
+ margin-bottom: -65px;
 }
 .footer__list {
   display: flex;
