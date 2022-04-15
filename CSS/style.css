@@ -261,14 +261,7 @@ footer {
 .header__homepage-link i {
   font-size: 100px;
   color: rgba(64, 64, 64, 0.9647058824);
-  margin-left: 50px;
-  margin-right: 200px;
-}
-
-.menu__logo img {
-  width: 490px;
-  height: 98px;
-  margin-right: 200px;
+  margin-right: 80px;
 }
 
 .menu-image img {
