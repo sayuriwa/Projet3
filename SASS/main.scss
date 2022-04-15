@@ -2,7 +2,7 @@
 @import 'Utils/mixins';
 @import 'Utils/fonctions';
 
-
+/*HOMEPAGE*/
 html {
   width: 100%;
   @include text-font;
@@ -222,7 +222,7 @@ footer {
  font-family: 'Shrikhand';
  font-size: 45px;
  margin-left: 50px;
- margin-bottom: -65px;
+ margin-bottom: -40px;
 }
 .footer__list {
   display: flex;
@@ -240,4 +240,98 @@ footer {
 }
 .footer__list__content i{
   margin-right: 40px;
+}
+
+
+
+
+/*MENU*/
+.header__homepage-link i{
+  font-size: 100px;
+  color: darken($background-color, 70%);
+  margin-left: 50px;
+  margin-right: 200px;
+}
+.menu__logo img{
+  width: 490px;
+  height: 98px;
+  margin-right: 200px;
+}
+
+
+.menu-image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: $background-color;
+  width: 100%;
+  border-radius: 75px 75px 0 0;
+  margin-top: -60px;
+}
+.menu__head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @include logo-font;
+  font-size: 80px;
+  margin: 20px;
+}
+.menu__head i{
+  font-size: 60px;
+}
+.menu__content__head {
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.menu__content__head__underline {
+  border-top: solid 10px $tertiary-color;
+  width: 150px;
+}
+.menu__content__bouton-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu__content__bouton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 40px;
+  width: 95%;
+  height: 180px;
+  font-size: 40px;
+  margin-bottom: 40px;
+  box-shadow: 2px 9px 14px darken($background-color, 10%);
+}
+.menu__content__bouton__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.menu__content__bouton__description p{
+  margin-top: -40px;
+  margin-left: 10px;
+}
+.menu__content__bouton__price {
+  font-weight: bold;
+  align-self: end;
+  margin-right: 10px;
+}
+.menu .validator-bouton {
+  align-self: center;
+  margin-top: 40px;
+  margin-bottom: 200px;
 }
