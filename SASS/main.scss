@@ -75,6 +75,7 @@ header {
 }
 .validator-bouton {
   background: linear-gradient($secondary-color, $primary-color);
+  position: relative;
   height: 155px;
   width: 550px;
   @include text-font;
@@ -87,7 +88,32 @@ header {
   justify-content: center;
   align-items: center;
   box-shadow: 2px 9px 14px $background-color;
-}
+  transition-property: transform opacity;
+  z-index: 1;
+    &:hover { 
+      &::after {
+        transform: scale(1.005);
+        opacity: 1;
+      }
+  }
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(lighten($secondary-color, 3) 0%, lighten($primary-color,3) 100%);
+      border-radius: 250px;
+      box-shadow: 2px 9px 20px darken($background-color,50);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 270ms;
+    }  
+}       
+  
+
+
 
 
 .how-to-use {
@@ -126,9 +152,12 @@ header {
   margin-bottom: 40px;
   margin-left: 100px;
   box-shadow: 2px 9px 14px $background-color;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
 }
 .how-to-use__list__bouton i{
-  color: darken($background-color, 20%);
+  color: lighten($background-color, 20%);
   margin-right: 45px;
 }
 .how-to-use__list__bouton__number-icon {
