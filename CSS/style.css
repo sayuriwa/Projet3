@@ -159,20 +159,25 @@ header {
 .how-to-use__list__bouton::after {
   content: "";
   position: absolute;
+  background: #f2eafb;
+  border-radius: 50px;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: #f2eafb;
-  border-radius: 50px;
   opacity: 0;
   z-index: -1;
   transition: opacity 270ms;
 }
 
+.how-to-use__list__bouton:hover i {
+  color: #9356DC;
+}
+
 .how-to-use__list__bouton i {
   color: rgba(191, 191, 191, 0.9647058824);
   margin-right: 45px;
+  transition: color 270ms;
 }
 
 .how-to-use__list__bouton__number-icon {

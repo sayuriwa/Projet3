@@ -163,21 +163,27 @@ header {
     &::after{
       content: "";
       position: absolute;
+      background: lighten($primary-color, 35);
+      border-radius: 50px;
       top: 0;
       right: 0;
       left: 0;
       bottom: 0;
-      background: lighten($primary-color, 35);
-      border-radius: 50px;
       opacity: 0;
       z-index: -1;
       transition: opacity 270ms;
+    }
     }  
-}   
-.how-to-use__list__bouton i{
-  color: darken($background-color, 20);
-  margin-right: 45px;
-}
+  .how-to-use__list__bouton {
+    &:hover i{
+    color: $primary-color;}
+  } 
+  .how-to-use__list__bouton i {
+    color: darken($background-color, 20);
+    margin-right: 45px;
+    //position: absolute;
+    transition: color 270ms;
+  }  
 .how-to-use__list__bouton__number-icon {
   width: 80px;
   height: 80px;
