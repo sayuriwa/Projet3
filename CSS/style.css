@@ -149,13 +149,29 @@ header {
   margin-bottom: 40px;
   margin-left: 100px;
   box-shadow: 2px 9px 14px #f2f2f2f6;
+  position: relative;
+  transition-property: opacity;
+  z-index: 1;
 }
-.how-to-use__list__bouton:hover {
-  background-color: #782cd3;
+.how-to-use__list__bouton:hover::after {
+  opacity: 1;
+}
+.how-to-use__list__bouton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #f2eafb;
+  border-radius: 50px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 270ms;
 }
 
 .how-to-use__list__bouton i {
-  color: rgba(255, 255, 255, 0.9647058824);
+  color: rgba(191, 191, 191, 0.9647058824);
   margin-right: 45px;
 }
 
