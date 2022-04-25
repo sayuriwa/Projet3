@@ -269,6 +269,13 @@ header {
   color: rgba(38, 38, 38, 0.9647058824);
   margin: 45px;
 }
+.restaurants__list__cards__content i:hover {
+  font-weight: 600;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: font-weight 700ms cubic-bezier(0.59, 0.15, 0.55, 0.98);
+}
 
 footer {
   width: 100%;
