@@ -259,17 +259,31 @@ header {
   @include text-font;
   font-size: 35px;
 }
-.restaurants__list__cards__content i{
-  font-size: 80px;
-  color: darken($background-color, 80%);
-  margin: 45px;
-  &:hover {
-    font-weight: 600;
-    background: -webkit-gradient(linear, left top, left bottom, from($secondary-color), to($primary-color));
+.restaurants__list__cards__content__description__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.empty-hearth {
+    font-size: 80px;
+    color: darken($background-color, 80%);
+    margin: 45px;
+    position: relative;
+    &:hover +.full-hearth {
+      transform: scale(1);
+      transition: transform 1000ms cubic-bezier(.35,.43,0,.8);//cubic-bezier(.07,.52,0,.8);//cubic-bezier(.07,.52,.3,1.15);
+      transform-origin: 50% 90%;
+  }
+
+}
+.full-hearth {
+    font-size: 80px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: font-weight 700ms cubic-bezier(.59,.15,.55,.98);
-  }
+    position: absolute;
+    transform: scale(0);
 }
 
 
