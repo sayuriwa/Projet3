@@ -15,6 +15,85 @@ body {
   margin: 0;
 }
 
+/*LOADER*/
+.loader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: loader 3000ms both;
+  animation-delay: 2000ms;
+}
+@keyframes loader {
+  0%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.loader__circle {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  border-radius: 50%;
+  animation: homepage-loader 500ms backwards infinite ease-in-out alternate;
+}
+.loader__circle--1 {
+  animation-delay: 200ms;
+}
+.loader__circle--2 {
+  animation-delay: 400ms;
+}
+.loader__circle--3 {
+  animation-delay: 600ms;
+}
+.loader__circle--4 {
+  animation-delay: 800ms;
+}
+.loader__circle--5 {
+  animation-delay: 1000ms;
+}
+.loader__circle--6 {
+  animation-delay: 1200ms;
+}
+.loader__circle--7 {
+  animation-delay: 1400ms;
+}
+.loader__circle--8 {
+  animation-delay: 1600ms;
+}
+.loader__circle--9 {
+  animation-delay: 1800ms;
+}
+.circle--primary-color {
+  background: $primary-color;
+}
+.circle--secondary-color {
+  background: $secondary-color;
+}
+.circle--tertiary-color {
+  background: $tertiary-color;
+}
+@keyframes homepage-loader {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-400%);
+  }
+}
 
 header {
   width: 100%;
