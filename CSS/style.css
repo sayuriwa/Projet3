@@ -514,6 +514,7 @@ footer a {
   text-overflow: ellipsis;
   white-space: nowrap;
   box-shadow: 2px 9px 14px rgba(217, 217, 217, 0.9647058824);
+  animation: menu__bouton__appear 2000ms ease-in-out;
 }
 .menu__content__bouton:hover .menu__content__bouton__check {
   transform: translateX(0);
@@ -523,6 +524,28 @@ footer a {
 }
 .menu__content__bouton:hover .menu__content__bouton__check__icon {
   transform: rotate(360deg);
+}
+
+@keyframes menu__bouton__appear {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu__bouton__appear--1 {
+  animation-delay: 200ms;
+}
+
+.menu__bouton__appear--2 {
+  animation-delay: 400ms;
+}
+
+.menu__bouton__appear--3 {
+  animation-delay: 600ms;
 }
 
 .menu__content__bouton__description {
