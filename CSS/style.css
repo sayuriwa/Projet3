@@ -309,6 +309,11 @@ header {
   align-items: center;
 }
 
+.restaurants__list a {
+  text-decoration: none;
+  color: black;
+}
+
 .restaurants__list__cards {
   display: flex;
   flex-direction: column;
