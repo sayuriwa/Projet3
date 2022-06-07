@@ -3,10 +3,12 @@
 @import 'Utils/fonctions';
 
 /*HOMEPAGE*/
+
 html {
   width: 100%;
   @include text-font;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -43,6 +45,7 @@ body {
     visibility: hidden;
   }
 }
+/*LOADER-ANIMATION*/
 .loader__circle {
   width: 20px;
   height: 20px;
@@ -95,6 +98,7 @@ body {
   }
 }
 
+/*HEADER*/
 header {
   width: 100%;
   height: 130px;
@@ -109,7 +113,7 @@ header {
   justify-content: center;
 }
 
-
+/*LOCATION*/
 .location {
   background-color: $background-color;
   width: 100%;
@@ -124,13 +128,13 @@ header {
 .location i {
   font-size: 40px;
   margin-right: 30px;
-  color: darken($background-color, 10%);
+  color: darken($background-color, 20%);
 }
 .location p {
   @include text-font;
 }
 
-
+/*FIND-RESTAURANT*/
 .find-restaurant {
   background-color: lighten($background-color, 3%);
   width: 100%;
@@ -194,7 +198,7 @@ header {
 
 
 
-
+/*HOW-TO-USE*/
 .how-to-use {
   width: 100%;
   display: flex;
@@ -275,7 +279,7 @@ header {
   align-items: center;
 }
 
-
+/*RESTAURANTS*/
 .restaurants {
   width: 100%;
   display: flex;
@@ -304,6 +308,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
   width: 90%;
   background-color: white;
   margin-bottom: 50px;
@@ -320,19 +325,24 @@ header {
   height: 400px;
   border-radius: 40px 40px 0 0;
 }
-/*.restaurants__list__cards--new {
-  display: flex;
-  justify-content: center;
-  border: solid 5px darken($tertiary-color,25%);
-  background-color:lighten($tertiary-color,15%);
-  color: darken($tertiary-color,25%);
-  font-size: 30px;
-  font-weight: bold;
-  width: 30%;
+
+.restaurants__list__cards-new {
   position: absolute;
-  bottom: -30%;
-  right: 8%;
-}*/
+  left: 64%;
+  bottom: 82%;
+  width: 20%;
+  height: 7%;
+  text-align: center;
+  background-color: $tertiary-color;
+  border: solid 1px darken($tertiary-color,40);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  padding: 0.4em 1.2em;
+  color: darken($tertiary-color,40);
+  font-size: 260%;
+  font-weight: bold;
+}
+
 
 .restaurants__list__cards__content {
   display: flex;
