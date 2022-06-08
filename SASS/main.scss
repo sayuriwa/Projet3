@@ -7,6 +7,7 @@
 html {
   width: 100%;
   @include text-font;
+  
 }
 
 body {
@@ -15,6 +16,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
+  max-width: 2560px;
+  min-width: 320px;
 }
 
 /*LOADER*/
@@ -144,17 +147,27 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (min-width:1024px) {
+    width: 50%;
+    margin-left: 50%;
+  }
 }
 .find-restaurant__head {
   width: 85%;
   font-size: 65px;
   font-weight: bold;
   text-align: center;
+  @media (min-width:1024px) {
+    font-size: 50px;
+  }
 }
 .find-restaurant__description {
   font-size: 40px;
   @include text-font;
   text-align: center;
+  @media (min-width:1024px) {
+    font-size: 25px;
+  }
 }
 .validator-bouton {
   background: linear-gradient($secondary-color, $primary-color);
@@ -193,6 +206,11 @@ header {
       z-index: -1;
       transition: opacity 270ms;
     }  
+  @media (min-width:1024px) {
+    width: 430px;
+    height: 118px;
+    font-size: 30px;
+  }  
 }       
   
 
@@ -205,6 +223,17 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  @media (min-width:1024px) {
+    width: 50%;
+    margin-left: -50%;
+    margin-top: -51%;
+  }
+  @media (min-width:1440px) {
+    margin-top: -36%;
+  }
+  @media (min-width:2560px) {
+    margin-top: -18%;
+  }
 }
 .how-to-use__head {
   margin-top: 50px;
@@ -212,6 +241,11 @@ header {
   margin-left: 50px;
   font-weight: bold;
   font-size: 40px;
+  @media (min-width:1024px) {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+  }
 }
 .how-to-use__list {
   width: 100%;
@@ -219,6 +253,9 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items:space-between;
+  @media (min-width:1024px) {
+    width: 90%;
+  }
 }
 .how-to-use__list__bouton {
   width: 85%;
@@ -256,6 +293,13 @@ header {
       z-index: -1;
       transition: opacity 270ms;
     }
+    @media (min-width:1024px) {
+      font-size: 19px;
+      height: 101px;
+    }
+    @media (min-width:2560px) {
+      height: 82px;
+    }
     }  
   .how-to-use__list__bouton {
     &:hover i{
@@ -277,6 +321,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width:1024px) {
+    width: 56px;
+    height: 56px;
+    left: -29px;
+  }
 }
 
 /*RESTAURANTS*/
@@ -299,6 +348,11 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  @media (min-width:1024px) {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 .restaurants__list a {
   text-decoration: none;
@@ -318,6 +372,9 @@ header {
     &:hover {
       transform: scale(1.05);
     }
+  @media (min-width:1024px) {
+    width: 48%;
+  }  
 }
 .restaurants__list__cards img {
   object-fit: cover;
@@ -341,6 +398,10 @@ header {
   color: darken($tertiary-color,40);
   font-size: 260%;
   font-weight: bold;
+  @media (min-width:1024px) {
+    height: 5%;
+    font-size: 145%;
+  }
 }
 
 
