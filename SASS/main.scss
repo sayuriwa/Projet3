@@ -622,14 +622,12 @@ footer a {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   width: 100%;
 }
 .menu__content__bouton__description p{
   margin-top: -40px;
   margin-left: 10px;
+  width: 80%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
