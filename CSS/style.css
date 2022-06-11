@@ -10,8 +10,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  max-width: 2560px;
-  min-width: 320px;
 }
 
 /*LOADER*/
@@ -577,12 +575,41 @@ footer a {
   font-size: 80px;
   margin: 20px;
 }
+@media (min-width: 1025px) {
+  .menu__head {
+    font-size: 60px;
+    margin: 10px;
+  }
+}
 
+/*ONLY FOR DESKTOP VERSION*/
+@media (min-width: 1025px) {
+  .menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1025px) {
+  .menu__content {
+    width: 33%;
+  }
+}
+
+/**/
 .menu__content__head {
   font-size: 50px;
   margin-bottom: 50px;
   margin-top: 50px;
   margin-left: 20px;
+}
+@media (min-width: 1025px) {
+  .menu__content__head {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
 }
 
 .menu__content__head__underline {
@@ -616,6 +643,12 @@ footer a {
   white-space: nowrap;
   box-shadow: 2px 9px 14px rgba(217, 217, 217, 0.9647058824);
   animation: menu__bouton__appear 2000ms ease-in-out;
+}
+@media (min-width: 1025px) {
+  .menu__content__bouton {
+    height: 125px;
+    font-size: 25px;
+  }
 }
 .menu__content__bouton:hover .menu__content__bouton__check {
   transform: translateX(0);
@@ -668,6 +701,11 @@ footer a {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+@media (min-width: 1025px) {
+  .menu__content__bouton__description p {
+    margin-top: -6%;
+  }
+}
 
 .menu__content__bouton__price {
   font-weight: bold;
@@ -702,6 +740,11 @@ footer a {
   align-self: center;
   margin-top: 40px;
   margin-bottom: 200px;
+}
+@media (min-width: 1025px) {
+  .menu .validator-bouton {
+    margin-top: 180px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
