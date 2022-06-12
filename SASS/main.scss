@@ -5,7 +5,6 @@
 html {
   @include text-font;
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -183,7 +182,7 @@ header {
   justify-content: center;
   align-items: center;
   box-shadow: 2px 9px 14px $background-color;
-  transition-property: transform opacity;
+  transition-property: all;
   z-index: 1;
     &:hover { 
       &::after {
@@ -228,7 +227,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items:space-between;
 }
 .how-to-use__list__bouton {
   width: 85%;
@@ -392,7 +390,7 @@ header {
     position: relative;
     &:hover +.full-hearth {
       transform: scale(1);
-      transition: transform 1000ms cubic-bezier(.35,.43,0,.8);//cubic-bezier(.07,.52,0,.8);//cubic-bezier(.07,.52,.3,1.15);
+      transition: transform 1000ms cubic-bezier(.35,.43,0,.8);
       transform-origin: 50% 90%;
   }
 }
