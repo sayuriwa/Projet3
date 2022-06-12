@@ -1,6 +1,4 @@
-/*HOMEPAGE*/
 html {
-  width: 100%;
   font-family: "Roboto", sans-serif;
 }
 
@@ -12,6 +10,7 @@ body {
   margin: 0;
 }
 
+/*HOMEPAGE-HOMEPAGE-HOMEPAGE-HOMEPAGE-HOMEAPAGE*/
 /*LOADER*/
 .loader {
   display: flex;
@@ -41,7 +40,6 @@ body {
     visibility: hidden;
   }
 }
-/*LOADER-ANIMATION*/
 .loader__circle {
   width: 20px;
   height: 20px;
@@ -185,6 +183,7 @@ header {
   text-align: center;
 }
 
+/*VALIDATOR-BOUTON*/
 .validator-bouton {
   background: linear-gradient(#FF79DA, #9356DC);
   position: relative;
@@ -439,6 +438,7 @@ header {
   transform: scale(0);
 }
 
+/*FOOTER*/
 footer {
   width: 100%;
   background-color: rgba(38, 38, 38, 0.9647058824);
@@ -481,13 +481,17 @@ footer a {
   margin-right: 40px;
 }
 
-/*MENU*/
+/*PAGES*/
+/*HEADER*/
 .header__homepage-link i {
-  font-size: 100px;
-  color: rgba(64, 64, 64, 0.9647058824);
-  margin-right: 80px;
+  font-size: 80px;
+  color: black;
+  position: absolute;
+  top: 1%;
+  left: 7%;
 }
 
+/*IMAGE*/
 .menu-image {
   height: 450px;
   width: 100%;
@@ -499,6 +503,7 @@ footer a {
   height: 100%;
 }
 
+/*MENU*/
 .menu {
   display: flex;
   flex-direction: column;
@@ -666,6 +671,11 @@ footer a {
   margin-right: -11%;
   transition: margin-right 500ms ease-in-out;
   transition-delay: 100ms;
+}
+@media (min-width: 1025px) {
+  .menu__content__bouton__price {
+    margin-right: -40%;
+  }
 }
 
 .menu__content__bouton__check {
