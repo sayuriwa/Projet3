@@ -1,6 +1,5 @@
 @import 'Utils/variables';
 @import 'Utils/mixins';
-@import 'Utils/fonctions';
 
 /*HOMEPAGE*/
 
@@ -135,6 +134,14 @@ header {
   @include text-font;
 }
 
+/*RESTAURANTS-OPTIONS*/
+.restaurants-options {
+  width: 100%;
+  @media (min-width:1025px) {
+    display: flex;
+  }
+}
+
 /*FIND-RESTAURANT*/
 .find-restaurant {
   background-color: lighten($background-color, 3%);
@@ -145,28 +152,23 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media (min-width:1024px) {
-    width: 50%;
-    margin-left: 50%;
-  }
 }
+
 .find-restaurant__head {
   width: 85%;
   font-size: 65px;
   font-weight: bold;
   text-align: center;
-  @media (min-width:1024px) {
-    font-size: 50px;
+  @media (min-width:1025px) {
+    width: 65%;
   }
 }
 .find-restaurant__description {
   font-size: 40px;
   @include text-font;
   text-align: center;
-  @media (min-width:1024px) {
-    font-size: 25px;
-  }
 }
+
 .validator-bouton {
   background: linear-gradient($secondary-color, $primary-color);
   position: relative;
@@ -204,11 +206,7 @@ header {
       z-index: -1;
       transition: opacity 270ms;
     }  
-  @media (min-width:1024px) {
-    width: 430px;
-    height: 118px;
-    font-size: 30px;
-  }  
+ 
 }       
   
 
@@ -221,40 +219,24 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  @media (min-width:1024px) {
-    width: 50%;
-    margin-left: -50%;
-    margin-top: -51%;
-  }
-  @media (min-width:1440px) {
-    margin-top: -36%;
-  }
-  @media (min-width:2560px) {
-    margin-top: -18%;
-  }
 }
+
 .how-to-use__head {
   margin-top: 50px;
   margin-bottom: 10px;
   margin-left: 50px;
   font-weight: bold;
   font-size: 40px;
-  @media (min-width:1024px) {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 30px;
-  }
 }
+
 .how-to-use__list {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items:space-between;
-  @media (min-width:1024px) {
-    width: 90%;
-  }
 }
+
 .how-to-use__list__bouton {
   width: 85%;
   height: 200px;
@@ -291,13 +273,6 @@ header {
       z-index: -1;
       transition: opacity 270ms;
     }
-    @media (min-width:1024px) {
-      font-size: 19px;
-      height: 101px;
-    }
-    @media (min-width:2560px) {
-      height: 82px;
-    }
     }  
   .how-to-use__list__bouton {
     &:hover i{
@@ -319,11 +294,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (min-width:1024px) {
-    width: 56px;
-    height: 56px;
-    left: -29px;
-  }
 }
 
 /*RESTAURANTS*/
@@ -334,6 +304,7 @@ header {
   justify-content: flex-start;
   background-color: $background-color;
 }
+
 .restaurants__head {
   margin-top: 50px;
   margin-bottom: 10px;
@@ -341,21 +312,24 @@ header {
   font-weight: bold;
   font-size: 40px;
 }
+
 .restaurants__list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  @media (min-width:1024px) {
+  @media (min-width:1025px) {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
   }
 }
+
 .restaurants__list a {
   text-decoration: none;
   color: black;
 }
+
 .restaurants__list__cards {
   display: flex;
   flex-direction: column;
@@ -370,10 +344,11 @@ header {
     &:hover {
       transform: scale(1.05);
     }
-  @media (min-width:1024px) {
+  @media (min-width:1025px) {
     width: 48%;
   }  
 }
+
 .restaurants__list__cards img {
   object-fit: cover;
   width: 100%;
@@ -383,23 +358,17 @@ header {
 
 .restaurants__list__cards-new {
   position: absolute;
-  left: 64%;
+  left: 60%;
   bottom: 82%;
-  width: 20%;
-  height: 7%;
+  width: 35%;
+  height: 10%;
   text-align: center;
-  background-color: $tertiary-color;
-  border: solid 1px darken($tertiary-color,40);
+  background-color: darken($tertiary-color,5);
   border-radius: 10px;
-  box-shadow: 2px 2px 2px black;
-  padding: 0.4em 1.2em;
-  color: darken($tertiary-color,40);
+  box-shadow: 2px 2px 20px grey;
+  color: darken($tertiary-color,30);
   font-size: 260%;
   font-weight: bold;
-  @media (min-width:1024px) {
-    height: 5%;
-    font-size: 145%;
-  }
 }
 
 
