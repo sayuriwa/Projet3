@@ -602,7 +602,7 @@ footer a {
   transform: translateX(0);
 }
 .menu__content__bouton:hover .menu__content__bouton__price {
-  margin-right: 2%;
+  transform: translateX(-200%);
 }
 .menu__content__bouton:hover .menu__content__bouton__check__icon {
   transform: rotate(360deg);
@@ -668,13 +668,9 @@ footer a {
   font-weight: bold;
   align-self: end;
   margin-right: -11%;
-  transition: margin-right 500ms ease-in-out;
-  transition-delay: 100ms;
-}
-@media (min-width: 1025px) {
-  .menu__content__bouton__price {
-    margin-right: -40%;
-  }
+  background-color: white;
+  transform: translateX(0);
+  transition: transform 500ms ease-in-out;
 }
 
 .menu__content__bouton__check {
@@ -686,8 +682,7 @@ footer a {
   color: white;
   font-size: 60px;
   height: 180px;
-  width: 200px;
-  right: 0;
+  width: 25%;
   border-radius: 0px 40px 40px 0px;
   transform: translateX(1000px);
   transition: transform 500ms ease-in-out;
