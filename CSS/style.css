@@ -551,9 +551,15 @@ footer a {
   margin-right: 80px;
 }
 
+.menu-image {
+  height: 450px;
+  width: 100%;
+}
+
 .menu-image img {
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 .menu {
@@ -588,6 +594,7 @@ footer a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -690,6 +697,11 @@ footer a {
   flex-wrap: nowrap;
   width: 100%;
 }
+@media (min-width: 1025px) {
+  .menu__content__bouton__description {
+    width: 80%;
+  }
+}
 
 .menu__content__bouton__description p {
   margin-top: -40px;
@@ -703,6 +715,12 @@ footer a {
   .menu__content__bouton__description p {
     margin-top: -6%;
   }
+}
+
+.menu__content__bouton__description h3 {
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__content__bouton__price {
