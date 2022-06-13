@@ -17,7 +17,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
+  position: fixed;
   margin: auto;
   top: 0;
   right: 0;
@@ -374,13 +374,15 @@ header {
   bottom: 82%;
   width: 35%;
   height: 10%;
-  text-align: center;
   background-color: #85dcc7;
   border-radius: 10px;
   box-shadow: 2px 2px 20px grey;
   color: #32b091;
-  font-size: 260%;
+  font-size: 240%;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .restaurants__list__cards__content {
@@ -636,6 +638,7 @@ footer a {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: nowrap;
+  padding-left: 4%;
   width: 100%;
 }
 @media (min-width: 1025px) {
@@ -646,7 +649,6 @@ footer a {
 
 .menu__content__bouton__description p {
   margin-top: -40px;
-  margin-left: 10px;
   width: 80%;
   overflow: hidden;
   text-overflow: ellipsis;
