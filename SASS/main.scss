@@ -125,10 +125,14 @@ header {
   }
 .location i {
   font-size: 40px;
-  margin-right: 30px;
+  margin-left: 377%;
   color: darken($background-color, 20%);
 }
-.location p {
+#local-search {
+  font-size: 40px;
+  background-color: $background-color;
+  border: none;
+  margin-left: 15%;
   @include text-font;
 }
 
